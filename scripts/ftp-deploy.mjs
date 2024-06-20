@@ -30,13 +30,12 @@ async function main() {
             include: ["*", "**/*"], // Upload all files from build folder
             exclude: [], // Exclude no files
 
-            deleteRemote: false, // Set to true if you want to delete ALL FILES in the remote root before uploading
+            deleteRemote: true, // Set to true if you want to delete ALL FILES in the remote root before uploading
             forcePasv: false, // Use passive mode
             secure: true,
             secureOptions: {
               "rejectUnauthorized": false
             },
-            debug: console.log,
         })
         
         
